@@ -11,13 +11,6 @@ for (i = 0; i < N; i++) {
 for (j = 0; j < M; j++) {
     b = b + rand();
 }
-Options: 
- 
-
-O(N * M) time, O(1) space
-O(N + M) time, O(N + M) space
-O(N + M) time, O(1) space
-O(N * M) time, O(N + M) space
 
 Output: 
 
@@ -34,13 +27,6 @@ for (i = 0; i < N; i++) {
         a = a + i + j;
     }
 }
-Options: 
- 
-
-O(N)
-O(N*log(N))
-O(N * Sqrt(N))
-O(N*N)
 
 Output: 
 
@@ -62,14 +48,7 @@ for (i = n / 2; i <= n; i++) {
         k = k + n / 2;
     }
 }
-Options: 
- 
 
-O(n)
-O(nLogn)
-O(n^2)
-O(n^2Logn)
-Output: 
 
 2. O(nLogn)
 Explanation: If you notice, j keeps doubling till it is less than or equal to n. Several times, we can double a number till it is less than n would be log(n). 
@@ -82,15 +61,6 @@ So, total steps = O(n/ 2 * log (n)) = O(n*logn)
 
 
 # 4. What does it mean when we say that an algorithm X is asymptotically more efficient than Y? 
-Options: 
- 
-
-
-
-X will always be a better choice for small inputs
-X will always be a better choice for large inputs
-Y will always be a better choice for small inputs
-X will always be a better choice for all inputs
  
 
 2. X will always be a better choice for large inputs
@@ -104,13 +74,7 @@ while (i > 0) {
     a += i;
     i /= 2;
 }
-Options: 
- 
 
-O(N)
-O(Sqrt(N))
-O(N / 2)
-O(log N)
 Output: 
  
 
@@ -120,20 +84,12 @@ x = log(N)
 
 # 6. Which of the following best describes the useful criterion for comparing the efficiency of algorithms?
 
-Time
-Memory
-Both of the above
-None of the above
 
 3. Both of the above
 Explanation: Comparing the efficiency of an algorithm obviously depends on time and memory taken by  an algorithm, 
 
 # 7. How is time complexity measured?
 
-By counting the number of algorithms in an algorithm.
-By counting the number of primitive operations performed by the algorithm on given input size.
-By counting the size of data input to the algorithm.
-None of the above
 2. By counting the number of primitive operations performed by the algorithm on given input size.
 
 
@@ -142,10 +98,7 @@ None of the above
 
 for(var i=0;i<n;i++)
     i*=k
-O(n)
-O(k)
-O(logkn)
-O(lognk)
+
 Output:
 
 3. O(logkn)
@@ -158,10 +111,7 @@ var value = 0;
 for(var i=0;i<n;i++)
     for(var j=0;j<i;j++)
     value += 1;
-n
-(n+1)
-n(n-1)/2
-n(n+1)/2
+
 Output:
 
 3. n(n-1)/2
